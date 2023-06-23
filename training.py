@@ -66,20 +66,37 @@ def max_num(num1, num2, num3):
 
 print(max_num(3, 4, 5))
 
-# Better Calculator
-num1 = float(input("Enter the first number: "))
-op = input("Enter the operator: ")
-num2 = float(input("Enter the second number: "))
+## Better Calculator
+#num1 = float(input("Enter the first number: "))
+#op = input("Enter the operator: ")
+#num2 = float(input("Enter the second number: "))
 
-if op == "+":
-    print(num1 + num2)
-elif op == "-":
-    print(num1 - num2)
-elif op == "*":
-    print(num1 * num2)
-elif op == "/":
-    print(num1 / num2)
-else:
-    print ("Invalid Operator")
+#if op == "+":
+#    print(num1 + num2)
+#elif op == "-":
+#    print(num1 - num2)
+#elif op == "*":
+#    print(num1 * num2)
+#elif op == "/":
+#    print(num1 / num2)
+#else:
+#    print ("Invalid Operator")
 
-# Dictionaries 
+# Dictionaries
+monthConversions = {
+    "Jan": "January",
+    "Feb": "February",
+    "Mar": "March",
+    "Apr": "April",
+    "May": "May",
+    "Jun": "June",
+    "Jul": "July",
+    "Aug": "August",
+    "Sep": "September",
+    "Oct": "October",
+    "Nov": "November",
+    "Dec": "December"
+}
+
+print(monthConversions.get("Sep", "Not Valid"))
+# Dictionaries can also have numbers as the keys.
