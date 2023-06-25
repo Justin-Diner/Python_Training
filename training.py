@@ -100,3 +100,74 @@ monthConversions = {
 
 print(monthConversions.get("Sep", "Not Valid"))
 # Dictionaries can also have numbers as the keys.
+
+# While Loops
+#i = 1
+
+#while i <= 10:
+#    print(i)
+#    i += 1
+
+# Guessing Game
+#secret_word = "guess"
+#guess_count = 0
+#guess_limit = 3
+#out_of_guesses = False
+#guess = ""
+
+#while guess != secret_word and not(out_of_guesses):
+#    if guess_count < guess_limit:
+#        guess = input("Enter guess: ")
+#        guess_count += 1
+#    else:
+#        out_of_guesses = True
+
+#if out_of_guesses:
+#    print("Out of Guesses, YOU LOSE!")
+#else:
+#    print("You win!")
+
+
+# For Loops
+
+for index in range(len(friends)):
+    if index == 0:
+        print("First iteration")
+    else:
+        print("Not first")
+
+def raise_to_power(num, exp):
+    """Returns the number times the given exponent"""
+    result = 1
+    for index in range(exp):
+        print(index)
+    return result
+
+number_grid = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [0]
+]
+
+for row in number_grid:
+    for col in row:
+        print(col)
+
+def translate(phrase):
+    """Creates a Translation"""    
+    translation = ""
+    for letter in phrase:
+        if letter.lower() in "aeiou":
+            if letter.isupper(): 
+                translation = translation + "G"
+            else:
+                translation = translation + "g"
+        else:
+            translation = translation + letter
+    return translation
+
+print(translate("Hello there buddy!"))
+print(translate("TO be or not to be!"))
+
+# Comments 
