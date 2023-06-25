@@ -1,3 +1,5 @@
+import useful_tools
+
 """Module for Testing Python"""
 friends = ["Allen", 2, "Brian", "Tyler", "Allison"]
 friends[1] = "Creed"
@@ -170,4 +172,38 @@ def translate(phrase):
 print(translate("Hello there buddy!"))
 print(translate("TO be or not to be!"))
 
-# Comments 
+# Comments
+#try:
+#    value = 10 / 0
+#    number = int(input("Enter a number: "))
+#    print(number)
+#except ZeroDivisionError as err:
+#    print(err)
+#except ValueError:
+#    print("Invalid Input")
+
+# Python Read Command
+# Modes
+# r = read
+# w = write
+# a = append
+# r+ = read and write
+# employee_file.readable() returns a boolean saying if it is readable.
+# employee_file.read() - repeats all information
+# employee_file.readline() - reads first line. If you add another, it will print the second line, etc.
+# employee_file.readlines() - puts every line into an array.
+
+#employee_file = open("employees.txt", "r")
+#for employee in employee_file.readlines():
+#    print(employee)
+#employee_file.close()
+
+#employee_file = open("employees1.txt", "w")
+#employee_file.write("\n Kelly - Customer Service")
+#employee_file.close()
+
+# Modules in Python
+# A file that you can import into your Python file.
+print(useful_tools.roll_dice(10))
+
+# Classes and Objects
