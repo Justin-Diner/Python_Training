@@ -1,4 +1,7 @@
 import useful_tools
+from Student import Student
+from Chef import Chef
+from ChineseChef import ChineseChef
 
 """Module for Testing Python"""
 friends = ["Allen", 2, "Brian", "Tyler", "Allison"]
@@ -207,3 +210,15 @@ print(translate("TO be or not to be!"))
 print(useful_tools.roll_dice(10))
 
 # Classes and Objects
+student1 = Student("Oscar", "Accounting", 3.1, True)
+student2 = Student("Justin", "Business", 3.8, False)
+
+print(student1.on_honor_roll())
+
+myChef = Chef()
+myChef.make_chicken()
+
+myChineseChef = ChineseChef()
+myChineseChef.make_chicken()
+myChineseChef.make_fried_rice()
+myChineseChef.make_special_dish()

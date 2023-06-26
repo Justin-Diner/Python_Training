@@ -26,3 +26,6 @@ def run_test(questions):
     print("You got " + str(score) + "/" + str(len(questions)) + " correct")
 
 run_test(questions)
+
+# Class Functions
+# Functions that we use inside of a class that can modify the objects of that class or give us specific info. 
